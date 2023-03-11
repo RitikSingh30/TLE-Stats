@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLE - Stats</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="w-[100vw] h-[100vh] flex justify-center items-center bg-gradient-to-br from-orange-100 to-orange-200">
+        <div class="border-solid border-2 border-gray-900 w-[35%] bg-sky-100 rounded-lg">
+            <!-- upper heading  -->
+
+            <h1 class="text-center font-extrabold text-2xl">TLE Stats</h1>
+
+            <!-- content box  -->
+            <div class="p-4">
+
+                <!-- readonly box  -->
+                <div class="flex justify-around">
+
+                    <!-- peding payement -->
+                    <div class="w-[35%]">
+                        <h2 class="text-xl font-bold text-red-700">Payment Pending</h2>
+
+                        <!-- doubt solve  -->
+                        <div class="py-2">
+                            <h3 class="text-blue-800 font-semibold text-lg">Doubt Resolved</h3>
+                            <p>
+                                <span level-1>Level 1 : </span>
+                                <span class="level-1-no-of-thanks" id="chatDoubtLevel1Pen">0 </span>
+                                <span class="level-1-amount" id="chatDoubtLevel1PenAmount">[0]</span>
+                            </p>
+                            <p>
+                                <span level-2>Level 2 : </span>
+                                <span class="level-2-no-of-thanks" id="chatDoubtLevel2Pen">0 </span>
+                                <span class="level-2-amount" id="chatDoubtLevel2PenAmount">[0]</span>
+                            </p>
+                            <p>
+                                <span level-3>Level 3 : </span>
+                                <span class="level-3-no-of-thanks" id="chatDoubtLevel3Pen">0 </span>
+                                <span class="level-3-amount" id="chatDoubtLevel3PenAmount">[0]</span>
+                            </p>
+                            <p>
+                                <span level-4>Level 4 : </span>
+                                <span class="level-4-no-of-thanks" id="chatDoubtLevel4Pen">0 </span>
+                                <span class="level-4-amount" id="chatDoubtLevel4PenAmount">[0]</span>
+                            </p>
+                        </div>
+
+                        <!-- dr taken  -->
+                        <div class="py-2">
+                            <h3 class="text-blue-800 font-semibold text-lg">DR Taken</h3>
+                            <p>
+                                <span level-1-dr>Level 1 : </span>
+                                <span class="level-1-dr-taken" id="DoubtResolutionLevel1Pen">0 </span>
+                                <span class="level-1-dr-amount" id="DoubtResolutionLevel1PenAmount">[0]</span>
+                            </p>
+                            <p>
+                                <span level-2-dr>Level 2 : </span>
+                                <span class="level-2-dr-taken" id="DoubtResolutionLevel2Pen">0 </span>
+                                <span class="level-2-dr-amount" id="DoubtResolutionLevel2PenAmount">[0]</span>
+                            </p>
+                        </div>
+
+                        <!-- total amount  -->
+                        <div>
+                            <label for="curTotal" class="text-lg font-bold text-fuchsia-700">Total</label>
+                            <input type="text" readonly id="curTotal" class="border-2 border-solid border-gray-900 rounded-md px-3 w-28" value="0">
+                        </div>
+
+                    </div>
+
+                    <!-- total payement  -->
+                    <div class="w-[35%]">
+                        <h2 class="text-xl font-bold text-red-700">Total Payment</h2>
+
+                        <!-- doubt solve  -->
+                        <div class="py-2">
+                            <h3 class="text-blue-800 font-semibold text-lg">Doubt Resolved</h3>
+                            <p>
+                                <span level-1>Level 1 : </span>
+                                <span class="level-1-no-of-thanks" id="chatDoubtLevel1">0 </span>
+                                <span class="level-1-amount" id="chatDoubtLevel1Amount">[0]</span>
+                            </p>
+                            <p>
+                                <span level-2>Level 2 : </span>
+                                <span class="level-2-no-of-thanks" id="chatDoubtLevel2">0 </span>
+                                <span class="level-2-amount" id="chatDoubtLevel2Amount">[0]</span>
+                            </p>
+                            <p>
+                                <span level-3>Level 3 : </span>
+                                <span class="level-3-no-of-thanks" id="chatDoubtLevel3">0 </span>
+                                <span class="level-3-amount" id="chatDoubtLevel3Amount">[0]</span>
+                            </p>
+                            <p>
+                                <span level-4>Level 4 : </span>
+                                <span class="level-4-no-of-thanks" id="chatDoubtLevel4">0 </span>
+                                <span class="level-4-amount" id="chatDoubtLevel4Amount">[0]</span>
+                            </p>
+                        </div>
+
+                        <!-- dr taken  -->
+                        <div class="py-2">
+                            <h3 class="text-blue-800 font-semibold text-lg">DR Taken</h3>
+                            <p>
+                                <span level-1-dr>Level 1 : </span>
+                                <span class="level-1-dr-taken" id="DoubtResolutionLevel1">0 </span>
+                                <span class="level-1-dr-amount" id="DoubtResolutionLevel1Amount">[0]</span>
+                            </p>
+                            <p>
+                                <span level-2-dr>Level 2 : </span>
+                                <span class="level-2-dr-taken" id="DoubtResolutionLevel2">0 </span>
+                                <span class="level-2-dr-amount" id="DoubtResolutionLevel2Amount">[0]</span>
+                            </p>
+                        </div>
+
+                        <!-- total amount  -->
+                        <div>
+                            <label for="Total" class="text-lg font-bold text-fuchsia-700">Total</label>
+                            <input type="text" readonly id="Total" class="border-2 border-solid border-gray-900 rounded-md px-3 w-28" value="0">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- input box  -->
+                <hr class="mt-3 bg-black h-[1px]">
+                <div class="pt-4">
+                    <form action="" class="flex flex-col items-center">
+                        <label for="level" class="text-stone-600 font-extrabold">Enter the Level</label>
+                        <input type="text" id="inputLevel" pattern="[1-4]{1}" class="border-2 border-solid border-gray-900 rounded-md">
+                        <div class="flex mt-2 gap-1">
+                            <select name="dr-doubt-choice" id="dr-doubt-choice" class="border-2 border-solid border-gray-900 rounded-md">
+                                <option value="doubt-resolve">Doubt-resolve</option>
+                                <option value="DR-Taken">DR-Taken</option>
+                            </select>
+                            <input type="text" id="doubt-resolve" pattern="[0-9]" class="border-2 border-solid border-gray-900 rounded-md">
+                        </div>
+                        <input type="button" value="Submit" class="border-2 border-solid border-gray-900 p-1 mt-2 rounded-md bg-red-500
+                         text-white font-bold cursor-pointer" submit-button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
